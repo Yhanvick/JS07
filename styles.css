@@ -15,7 +15,9 @@ body {
     text-align: center;
     background-color: #1a1b26;
     padding: 20px;
-    border-radius: 20px;
+    margin: 20px;
+    border-radius: 60px;
+    width: 100%;
 }
 
 .row {

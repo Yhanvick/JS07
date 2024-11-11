@@ -1,7 +1,7 @@
 // URL base de la API de Pokémon
 const API_URL = "https://pokeapi.co/api/v2/";
 
-// elecciona el contenedor donde se mostrarán las tarjetas de Pokémon
+// selecciona el contenedor donde se mostrarán las tarjetas de pokémon. que es mi constante global
 const CARD_CONTAINER = document.getElementById("card_pokemon");
 
 // con esta función obtengo los datos de un pokémon desde la API
@@ -30,8 +30,7 @@ document.getElementById('get-btn').addEventListener('click', async () => {
         // Crea la tarjeta del Pokémon y la agrega al contenedor
         const card = createCard(pokemon);
         CARD_CONTAINER.append(card);
-        // Guarda los datos del Pokémon en localStorage
-        savePokemonData(pokemon);
+        savePokemonData(pokemon); // Guarda los datos del Pokémon en localStorage
     }
 });
 
